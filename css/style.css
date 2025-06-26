@@ -75,8 +75,24 @@ nav a:hover {
 }
 
 .search button:hover {
-    background-color: #57345e;
+    background-color: #5e3454;
 }
+section h2 {
+  margin-bottom: 15px;
+  color: #5a3e36;
+  font-size: 1.8rem;
+}
+.book-grid,
+.search-results,
+.popular-books,
+.favorites {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* style section added with src */
 footer {
     background: #2c3e50;
     color: white;
