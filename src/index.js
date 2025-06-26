@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    displaySearchResults("Harry Potter"); //default search result
+    displaySearchResults("Hunger games"); //default search result
     displayPopularBooks();
     addToFavorites(book);
 })
