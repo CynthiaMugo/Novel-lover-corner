@@ -5,7 +5,7 @@ searchForm.addEventListener("submit", handleSearch);
 function handleSearch(event) {
     event.preventDefault();
 
-    const userInput = document.getElementById("search-button").value.trim();
+    const userInput = document.getElementById("search-input").value.trim();
     console.log(userInput);
     if (userInput === "") {
         alert("Please enter a search term.");
@@ -46,7 +46,5 @@ function displaySearchResults(userInput) {
             resultsContainer.appendChild(bookCard);
         });
     })
-
-
-
 }
+handleSearch("Harry Potter");
