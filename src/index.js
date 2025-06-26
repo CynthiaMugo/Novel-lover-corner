@@ -12,6 +12,8 @@ function handleSearch(event) {
         return;
     }
     displaySearchResults(userInput);
+
+    searchForm.reset();
 }
 // Function to display search results
 function displaySearchResults(userInput) {
@@ -46,5 +48,9 @@ function displaySearchResults(userInput) {
             resultsContainer.appendChild(bookCard);
         });
     })
+    .catch(error => {
+      console.error("Search failed:", error);
+    });
 }
-displaySearchResults();
+displaySearchResults("Harry Potter"); //default search result
+
