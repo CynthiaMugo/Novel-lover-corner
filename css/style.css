@@ -83,7 +83,6 @@ section h2 {
   font-size: 1.8rem;
   text-align: center;
 }
-.book-grid,
 .search-results,
 .popular-books,
 .favorite-books {
@@ -96,8 +95,6 @@ section h2 {
   border-radius: 8px;
   padding: 10px;
 }
-
-.book-grid button,
 .search-results button,
 .popular-books button,
 .favorite-books button {
@@ -110,7 +107,11 @@ section h2 {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
+.search-results button:hover,
+.popular-books button:hover,
+.favorite-books button:hover {
+    background-color: #5e3454;
+}
 /* style section added with src */
 footer {
     background: #2c3e50;

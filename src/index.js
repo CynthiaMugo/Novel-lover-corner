@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", () => {
+    displaySearchResults("Harry Potter"); //default search result
+    displayPopularBooks();
+    addToFavorites(book);
+})
 const searchForm = document.getElementById("search-form");
 searchForm.addEventListener("submit", handleSearch);
 
@@ -59,7 +64,7 @@ function displaySearchResults(userInput) {
       console.error("Search failed:", error);
     });
 }
-displaySearchResults("Harry Potter"); //default search result
+// displaySearchResults("Harry Potter"); //default search result
 
 // display popular books from the API
 function displayPopularBooks() {
@@ -106,7 +111,7 @@ function displayPopularBooks() {
       console.error("Failed to load popular books:", err);
     });
 }
-displayPopularBooks();
+// displayPopularBooks();
 
 // add to favorites when clicked
 function addToFavorites(book) {
@@ -136,5 +141,5 @@ function addToFavorites(book) {
         favoriteCard.remove();
     });
 }
-addToFavorites(book);
+// addToFavorites(book);
 
