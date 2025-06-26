@@ -91,6 +91,24 @@ section h2 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   margin-bottom: 30px;
+  background-color: #f4f4f4;
+  border-left: 6px solid #34495e;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.book-grid button,
+.search-results button,
+.popular-books button,
+.favorite-books button {
+    padding: 10px 15px;
+    background-color: #34495e;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 /* style section added with src */
