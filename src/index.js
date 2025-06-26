@@ -46,6 +46,12 @@ function displaySearchResults(userInput) {
           <p><em>${author}</em></p>
           <button id="addFavorite">Want to Read</button>
           `;
+
+          const addButton = bookCard.querySelector("#addFavorite");
+        //   console.log(addButton)
+            addButton.addEventListener("click", () => {
+            addToFavorites(book);
+        });
             resultsContainer.appendChild(bookCard);
         });
     })
@@ -85,7 +91,13 @@ function displayPopularBooks() {
           <img src="${imgSrc}" alt="${title}" />
           <h3>${title}</h3>
           <p><em>${author}</em></p>
+          <button id="addFavorite">Want to Read</button>
           `;
+          const addButton = bookCard.querySelector("#addFavorite");
+        //   console.log(addButton)
+            addButton.addEventListener("click", () => {
+            addToFavorites(book);
+            });
             popularContainer.appendChild(bookCard);
         })
 
