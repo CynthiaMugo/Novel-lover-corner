@@ -107,3 +107,27 @@ function displayPopularBooks() {
     });
 }
 displayPopularBooks();
+
+// add to favorites when clicked
+function addToFavorites(book) {
+    const favoritesContainer = document.getElementById("favorites-container");
+
+    const title = book.title || "No title available";
+    const author = book.author_name ? book.author_name.join(", ") : "Unknown Author";
+    const coverId = book.cover_i;
+    const imgSrc = coverId
+        ? `https://covers.openlibrary.org/b/id/${coverId}-M.jpg`
+        : "https://placehold.co/150x220?text=No+Cover&font=roboto";
+
+    const favoriteCard = document.createElement("div");
+    favoriteCard.classList.add("book");
+
+    favoriteCard.innerHTML = `
+        <img src="${imgSrc}" alt="${title}" />
+        <h3>${title}</h3>
+        <p><em>${author}</em></p>
+    `;
+
+    favoritesContainer.appendChild(favoriteCard);
+}
+addToFavorites(book);

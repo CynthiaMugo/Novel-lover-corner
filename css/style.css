@@ -81,11 +81,12 @@ section h2 {
   margin-bottom: 15px;
   color: #5a3e36;
   font-size: 1.8rem;
+  text-align: center;
 }
 .book-grid,
 .search-results,
 .popular-books,
-.favorites {
+.favorite-books {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
