@@ -31,8 +31,8 @@ function displaySearchResults(userInput) {
         console.log(data);
         console.log(resultsContainer);
         resultsContainer.innerHTML = ""; // Clear previous results
-        // Limit to 10 results
-        const books = data.docs.slice(0, 10); //docs is the name of the books array with the above endpoint
+        // Limit to 6 results
+        const books = data.docs.slice(0, 6); //docs is the name of the books array with the above endpoint
 
         books.forEach(book => {
             const bookCard = document.createElement("div");
