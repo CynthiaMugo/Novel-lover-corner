@@ -44,6 +44,7 @@ function displaySearchResults(userInput) {
           <img src="${imgSrc}" alt="${title}" />
           <h3>${title}</h3>
           <p><em>${author}</em></p>
+          <button id="addFavorite">Want to Read</button>
           `;
             resultsContainer.appendChild(bookCard);
         });
