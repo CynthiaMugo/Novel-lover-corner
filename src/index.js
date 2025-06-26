@@ -131,15 +131,16 @@ function addToFavorites(book) {
         <img src="${imgSrc}" alt="${title}" />
         <h3>${title}</h3>
         <p><em>${author}</em></p>
-        <button id="deleteFavorite">Remove</button>
+        <button class="deleteFavorite">Remove</button>
     `;
 
     favoritesContainer.appendChild(favoriteCard);
-    const deleteButton = document.querySelector("#deleteFavorite");
+    const deleteButton = favoriteCard.querySelector(".deleteFavorite");
     console.log(deleteButton);
     deleteButton.addEventListener("click", () => {
         favoriteCard.remove();
     });
+    
 }
 // addToFavorites(book);
 
