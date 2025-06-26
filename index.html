@@ -8,7 +8,42 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <header>
+    <h1>Novel Finder</h1>
+    <p>Uncover your next favorite read, one search at a time.</p>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About This App</h2>
+        <p>This quirky little library explorer uses the Open Library API to help you find books you'll want to lose sleep over. Search by title or author, click the heart to save to favorites, and vibe with the popular picks while you're at it.</p>
+    </section>
+    <section id="search" class="search">
+        <input type="text" id="search-input" placeholder="Search books by title or author...">
+        <button id="search-button">🔍 Search</button>
+    </section>
+    <section id="search-results">
+        <h2>Search Results</h2>
+        <div class="search-results" id="results-container">
+            <!-- Search results will be dynamically inserted here -->
+        </div>
+    </section>
+    <section id="popular">
+        <h2>Popular Books</h2>
+        <div class="popular-books" id="popular-container">
+            <!-- Popular books will be dynamically inserted here -->
+        </div>
+    <section id="favorites">
+        <h2>Favorites</h2>
+        <div class="favorites" id="favorites-container">
+            <!-- Favorite books will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Novel Lover Corner. All rights reserved.</p>
+        <p>Made with ❤️ by Cynthia Mugo</p>
+    </footer>
+
     <script src="./src/index.js"></script>
 </body>
 </html>
