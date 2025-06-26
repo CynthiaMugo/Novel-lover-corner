@@ -114,6 +114,9 @@ section h2 {
 .popular-books button:hover,
 .favorite-books button:hover {
     background-color: #5e3454;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
 }
 /* style section added with src */
 .book {
@@ -128,7 +131,11 @@ section h2 {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
+.book:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
 .book img {
     width: 100%;
     height: auto;

@@ -51,7 +51,6 @@ function displaySearchResults(userInput) {
           <p><em>${author}</em></p>
           <button id="addFavorite">Want to Read</button>
           `;
-
           const addButton = bookCard.querySelector("#addFavorite");
         //   console.log(addButton)
             addButton.addEventListener("click", () => {
