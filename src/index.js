@@ -47,4 +47,4 @@ function displaySearchResults(userInput) {
         });
     })
 }
-handleSearch("Harry Potter");
+displaySearchResults();
