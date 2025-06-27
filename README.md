@@ -18,8 +18,8 @@ A sleek, interactive web that lets users search, explore, and manage books using
 ## How to use
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/book-finder-app.git
-   cd book-finder-app
+   git clone https://github.com/CynthiaMugo/novel-lover-corner.git
+   cd novel-lover-corner
 2. Open index.html in your browser
     No build tools or servers required — pure front-end magic
 
