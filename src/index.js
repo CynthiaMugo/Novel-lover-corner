@@ -67,7 +67,8 @@ function displaySearchResults(userInput) {
 
 // display popular books from the API
 function displayPopularBooks() {
-    const popularUrl = "https://openlibrary.org/search.json?q=ud+theory";
+    // const popularUrl = "https://openlibrary.org/search.json?q=ud+theory";
+    const popularUrl = "https://openlibrary.org/search.json?q=the+most+popular+books&sort=editions&language=eng"
 
 
     fetch(popularUrl)
